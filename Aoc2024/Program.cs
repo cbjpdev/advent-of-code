@@ -2,8 +2,7 @@
 
 Stopwatch stopwatch = Stopwatch.StartNew();
 
-// Day7.PartOne();
-Day7.PartTwo();
+Day8.PartTwo();
 
 stopwatch.Stop();
 
