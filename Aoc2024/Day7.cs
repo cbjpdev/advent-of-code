@@ -1,5 +1,3 @@
-using System.Numerics;
-
 namespace Aoc2024;
 
 public static class Day7
