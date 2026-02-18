@@ -3,7 +3,6 @@ namespace Aoc2024;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 public static class Day15Pt2
 {
