@@ -4,7 +4,7 @@ public static class Day01
 {
     public static void Part1()
     {
-        string[] input = File.ReadAllLines("Inputs/day01.txt").Select(x => x).ToArray();
+        string[] input = File.ReadAllLines("Inputs/Day01.txt").Select(x => x).ToArray();
 
         int zeroCount = 0;
         int startingPoint = 50;
@@ -45,7 +45,7 @@ public static class Day01
 
     public static void Part2()
     {
-        string[] input = File.ReadAllLines("Inputs/day01.txt").Select(x => x).ToArray();
+        string[] input = File.ReadAllLines("Inputs/Day01.txt").Select(x => x).ToArray();
 
         int zeroCount = 0;
         int startingPoint = 50;
@@ -98,7 +98,7 @@ public static class Day01
         Console.WriteLine(zeroCount + rountTripsCount + passingZeroRightCount + passingZeroLeftCount);
     }
     
-    public static void Part02()
+    public static void Part2X()
     {
         string[] input = File.ReadAllLines("Inputs/day01.txt").Select(x => x).ToArray();
 
