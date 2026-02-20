@@ -1,8 +1,9 @@
 using System.Numerics;
+using System.Text.RegularExpressions;
 
 namespace aoc2025;
 
-public static class Day02
+public static partial class Day02
 {
     private static string[] GetInput()
     {
@@ -40,4 +41,32 @@ public static class Day02
 
         Console.WriteLine($"Total Score: {totalScore}");
     }
+    
+    public static void Part2()
+    {
+        string[] inputs = GetInput();
+        BigInteger totalScore = 0;
+
+        foreach (string input in inputs)
+        {
+            BigInteger left = Convert.ToInt64(input.Split('-')[0]);
+            BigInteger right = Convert.ToInt64(input.Split('-')[1]);
+            
+            for (BigInteger i = left; i <= right; i++)
+            {
+                string number = i.ToString();
+                
+                bool isRepeated = MyRegex().IsMatch(number);
+                if (!isRepeated) continue;
+                
+                totalScore += i;
+            }
+            
+        }
+
+        Console.WriteLine($"Total Score: {totalScore}");
+    }
+
+    [GeneratedRegex(@"^(.+)\1+$")]
+    private static partial Regex MyRegex();
 }
